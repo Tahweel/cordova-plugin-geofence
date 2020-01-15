@@ -1,0 +1,77 @@
+{
+  "_from": "git+https://github.com/MohamedMardona/ionic-geofence.git",
+  "_id": "cordova-plugin-geofence@0.7.0",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/cordova-plugin-geofence",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "git+https://github.com/MohamedMardona/ionic-geofence.git",
+    "rawSpec": "git+https://github.com/MohamedMardona/ionic-geofence.git",
+    "saveSpec": "git+https://github.com/MohamedMardona/ionic-geofence.git",
+    "fetchSpec": "https://github.com/MohamedMardona/ionic-geofence.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/MohamedMardona/ionic-geofence.git#20520805080bed4695c2e3817085934195423d38",
+  "_shasum": "bf3ed70a4a582d1e3579659cf365e2e378890f25",
+  "_spec": "git+https://github.com/MohamedMardona/ionic-geofence.git",
+  "_where": "/Users/moramadan/Documents/work/tahweel/MainStream Geofence Last/tahweel",
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/cowbell/cordova-plugin-geofence/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-geofence",
+    "platforms": [
+      "android",
+      "ios",
+      "wp8",
+      "windows8",
+      "windows"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova geofence plugin",
+  "devDependencies": {
+    "cordova": "^6.1.1",
+    "cordova-paramedic": "git+https://github.com/apache/cordova-paramedic.git"
+  },
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=5.0.0"
+    }
+  ],
+  "homepage": "https://github.com/MohamedMardona/ionic-geofence.git#readme",
+  "keywords": [
+    "cordova",
+    "plugin",
+    "geofence",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "cordova-wp8",
+    "cordova-windows8",
+    "cordova-windows"
+  ],
+  "license": "Apache-2.0",
+  "name": "cordova-plugin-geofence",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MohamedMardona/ionic-geofence.git"
+  },
+  "scripts": {
+    "posttest": "sed -i 's/play-services-location:9.8.0/play-services-location:+/g' plugin.xml",
+    "pretest": "sed -i 's/play-services-location:+/play-services-location:9.8.0/g' plugin.xml",
+    "test": "cordova-paramedic --platform android@6.0 --plugin . --verbose",
+    "test:ios": "FIX_PARAMEDIC=true cordova-paramedic --platform ios --plugin . --verbose"
+  },
+  "typings": "./typings/cordova-plugin-geofence.d.ts",
+  "version": "0.7.0"
+}
